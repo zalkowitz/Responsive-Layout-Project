@@ -1,0 +1,223 @@
+/* Base Styles */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html { font-size: 62.5%; } /*defining a base font-size of 62.5% to have the convenience of sizing rems 
+  in a way that is similar to using px*/ 
+  body { 
+    font-size: 1.5rem; /* =15px */
+    background-color: FloralWhite;
+    color:#333333;
+    font-family: 'Hind', sans-serif;
+    text-align:center;
+  } 
+  ul {
+    list-style:none;
+  }
+.name {
+  font-size: 2.6rem; /* =26px */
+  margin:20px 0;
+  font-weight:700;    
+  }
+  a {
+    text-decoration:none;
+    color:#333333;
+  }
+
+
+.main-nav a {
+  display:block;
+  padding:10px;
+  background-color:#fff;
+  color:#333;
+  font-weight:600;
+  font-size:1.6rem;
+  max-width:95%;
+  margin:0 auto 10px;
+}  
+.student-pic {
+  margin: 10px auto 20px;
+  max-width:65%;
+ }
+
+.introduction-p {
+  padding-bottom: 30px;
+  font-size:1.6rem;
+  max-width:300px;
+  margin:0 auto;
+ } 
+
+.portfolio-a p {
+  margin: 0 auto 30px;
+    max-width:260px;
+  }
+
+.contact p {
+  max-width:70%;
+  margin:0 auto 20px;  
+}        
+          
+h1 {
+font-size:1.8rem;
+font-weight:700;
+margin:30px;  
+}
+#portfolio-top {
+  padding-top:40px;
+}
+h2 {
+  font-size:2.0rem;
+  font-weight:400;
+  font-style:normal;
+  margin:10px;
+  }
+
+.portfolio-wrapper {
+  background-color:#fff;
+  padding-bottom:20px;
+}
+img.pic {
+  width:260px;
+  margin:0 auto;
+  text-align:center;
+}
+
+  
+footer {
+  border-top: 1px solid #333;
+  display:flex;
+  justify-content: space-between;
+  padding-top:30px;
+  padding-bottom:30px;
+  max-width:95%;
+  margin:0 auto;
+}
+ul.footer-nav {
+  display:none;
+}
+
+/* Styles for tablets */
+@media screen and (min-width: 768px) {
+  .main-wrapper {
+    margin:0 auto;
+    max-width:790px;
+  }
+.hidden {
+  display:none;
+}
+.main-nav{
+ display:flex;
+ justify-content:center;
+}
+
+.main-nav a {
+  background-color: transparent;
+  padding:0 20px 20px 0;
+}
+ul.footer-nav {
+  display:flex;
+  max-width:705px;
+  padding:0;
+}
+.footer-nav a {
+  font-weight:600;
+  justify-content:space-between;
+}
+
+.footer-nav li {
+  margin:0;
+  padding-left:20px; 
+} 
+ 
+.introduction {
+  display:flex;
+  justify-content:space-between;
+  max-width:705px;
+  margin:0 auto;
+}
+
+.introduction-p {
+  order:-1;
+  text-align:left;
+  flex:1;
+  max-width:100%;
+  padding-left:0px;
+}
+.student-pic {
+  max-width:75%;
+  padding-left:20px;
+  }
+ .portfolio {
+display:flex;
+margin:0 auto;
+flex-wrap:wrap; 
+ } 
+
+ .portfolio-a {
+  flex:1; 
+  margin:0 auto;
+}
+
+img.pic {
+  width:320px;
+  margin:10px auto 0;
+  text-align:center; 
+} 
+#portfolio-top {
+  margin-bottom:30px;
+ }
+ .contact p {
+  font-size:1.8rem;
+}
+}  
+/* Styles for desktops */
+@media screen and (min-width: 1024px) {
+  .main-wrapper {
+    margin:0 auto;
+    max-width:1140px;   
+  }
+  
+  .introduction-p {
+  padding-bottom: 30px;
+  font-size:1.8rem;
+  margin:0;
+  padding-left:0;
+ } 
+ .main-header {
+   display:flex;
+   justify-content:space-between;
+   align-items:baseline;
+   max-width:1067px;
+   height:60px;
+   margin:40px auto 0;
+   padding:0;
+ }
+.main-nav a {
+  margin-left:30px;
+  padding:0;
+}
+.name {
+  margin:0;
+}
+.student-pic {
+  margin:0;
+  padding-left:60px;
+}
+.introduction{
+  display:flex;
+  justify-content:space-between;
+  max-width:1067px;
+  margin:20px auto 0;
+  padding:0;
+}
+footer {
+  max-width:1067px;
+}
+.contact p {
+  max-width:50%;
+}
+}
